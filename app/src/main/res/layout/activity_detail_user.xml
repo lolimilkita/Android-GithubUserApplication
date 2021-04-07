@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:id="@+id/img_item_photo"
+                android:layout_gravity="center_horizontal"
+                android:src="@android:color/darker_gray"
+                tools:ignore="ContentDescription" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/users_name"
+            android:id="@+id/tv_item_name"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_github_icon"
+            android:layout_marginBottom="8dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/users_username"
+            android:id="@id/tv_item_username"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/tv_tableRow1"
+                        android:text="@string/users_company" />
+                    <TextView
+                        android:id="@+id/tv_item_company"
+                        style="@style/tv_tableRow2"
+                        android:text="@string/users_company" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/tv_tableRow1"
+                        android:text="@string/users_repository" />
+                    <TextView
+                        android:id="@+id/tv_repository"
+                        style="@style/tv_tableRow2"
+                        android:text="@string/users_repository" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/tv_tableRow1"
+                        android:text="@string/users_followers" />
+                    <TextView
+                        android:id="@+id/tv_followers"
+                        style="@style/tv_tableRow2"
+                        android:text="@string/users_followers" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/tv_tableRow1"
+                        android:text="@string/users_following" />
+                    <TextView
+                        android:id="@+id/tv_following"
+                        style="@style/tv_tableRow2"
+                        android:text="@string/users_following" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/tv_tableRow1"
+                        android:text="@string/users_location" />
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/tv_tableRow2"
+                        android:text="@string/users_location" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_set_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/red_100"
+            android:text="@string/share"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+</ScrollView>
