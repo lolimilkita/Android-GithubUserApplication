@@ -2,7 +2,8 @@
 Dicoding Submission 1 BFAA
 
 
-Only got 4 Star **** but it's okay :) keep learning 
+Only got 4 Star, 
+but it's okay :) keep learning 
 
 
 # Main Activity
